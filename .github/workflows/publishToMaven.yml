@@ -3,7 +3,7 @@ name: publishToMaven
 on:
   push:
     branches:
-      - develop
+      - master
 
 jobs:
   publishToMaven:

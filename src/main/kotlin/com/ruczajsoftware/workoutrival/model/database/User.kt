@@ -1,13 +1,11 @@
 package com.ruczajsoftware.workoutrival.model.database
 
 import com.arangodb.springframework.annotation.Document
-import com.fivemiles.auto.dataclass.DataClass
 import com.thinkinglogic.builder.annotation.Builder
 import java.util.ArrayList
 
 @Builder
 @Document("Users")
-@DataClass
 class User(
     var username: String = "",
     var password: String = "",
