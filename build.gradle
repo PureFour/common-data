@@ -4,7 +4,7 @@ plugins {
 }
 apply plugin: 'kotlin-kapt'
 
-version = "0.0.16"
+version = "0.0.17"
 group = "com.ruczajsoftware.workoutrival"
 
 repositories {
@@ -15,8 +15,6 @@ repositories {
 dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib'
     implementation 'com.thinkinglogic.builder:kotlin-builder-annotation:1.1.0'
-    kapt 'com.fivemiles.auto:auto-data-class-processor:0.7.0'
-    compile 'com.fivemiles.auto:auto-data-class-lib:0.7.0'
     implementation 'com.arangodb:arangodb-spring-data:3.2.3'
     implementation 'com.fasterxml.jackson.core:jackson-annotations:2.10.0'
     implementation 'com.google.code.gson:gson:2.8.6'
