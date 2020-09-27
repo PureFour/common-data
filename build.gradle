@@ -4,7 +4,7 @@ plugins {
 }
 apply plugin: 'kotlin-kapt'
 
-version = "0.0.17"
+version = "1.0.0"
 group = "com.ruczajsoftware.workoutrival"
 
 repositories {
@@ -32,9 +32,12 @@ publishing {
     }
     repositories {
         maven {
-            name = "myMavenRepo"
-            url = uri("https://mymavenrepo.com/repo/ZtoaSpNKZ8KI6Ft3HEZE/")
+            name = "GitHubPackages"
+            url = "https://maven.pkg.github.com/PureFour/workout-rival-common-data"
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
         }
     }
 }
-
