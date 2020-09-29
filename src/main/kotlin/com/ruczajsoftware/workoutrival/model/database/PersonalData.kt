@@ -6,7 +6,7 @@ import java.util.Date
 @Builder
 data class PersonalData(
     var birthday: Date = Date(),
-    var weight: Float = Float.NaN,
+    var weight: Float = 0f,
     var height: Int = 0,
     var sex: Sex = Sex.MALE
 )
