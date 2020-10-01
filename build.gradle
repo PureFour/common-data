@@ -4,7 +4,7 @@ plugins {
 }
 apply plugin: 'kotlin-kapt'
 
-version = "1.0.1"
+version = "1.0.1-dev"
 group = "com.ruczajsoftware.workoutrival"
 
 repositories {
@@ -27,7 +27,7 @@ dependencies {
 publishing {
     publications {
         myLibrary(MavenPublication){
-            from(components["java"])
+            from(components["kotlin"])
         }
     }
     repositories {
