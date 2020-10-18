@@ -4,7 +4,7 @@ plugins {
 }
 apply plugin: 'kotlin-kapt'
 
-version = "1.0.1-dev"
+version = "1.0.2-dev"
 group = "com.ruczajsoftware.workoutrival"
 
 repositories {
