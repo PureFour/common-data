@@ -4,6 +4,6 @@ import com.thinkinglogic.builder.annotation.Builder
 
 @Builder
 data class AuthenticationRequest(
-    var email: String = "",
+    var login: String = "",
     var password: String = ""
 )
